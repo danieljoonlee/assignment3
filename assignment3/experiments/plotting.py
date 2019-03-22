@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 # input_path = 'output.final/'
 # output_path = 'output.final/images/'
 input_path = 'output/'
-output_path = 'output/images/'
+output_path = 'output-1-images/'
 to_process = {
     'benchmark': {
         'path': 'benchmark',
