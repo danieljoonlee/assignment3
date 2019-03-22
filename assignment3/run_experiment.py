@@ -76,7 +76,7 @@ if __name__ == '__main__':
         parser.print_help()
         sys.exit(1)
 
-    seed = args.seed
+    seed = 33333333
     if seed is None:
         seed = np.random.randint(0, (2 ** 32) - 1)
         logger.info("Using seed {}".format(seed))
@@ -140,19 +140,12 @@ if __name__ == '__main__':
         if args.pca or args.all:
             run_experiment(experiment_details, experiments.PCAExperiment, 'PCA', args.dim, args.skiprerun,
                            verbose, timings)
-        # NOTE: These were experimented with but ultimately were not used for this assignment.
-        # if args.lda or args.all:
-        #     run_experiment(experiment_details, experiments.LDAExperiment, 'LDA', args.dim, args.skiprerun,
-        #                    verbose, timings)
-        # if args.svd or args.all:
-        #     run_experiment(experiment_details, experiments.SVDExperiment, 'SVD', args.dim, args.skiprerun,
-        #                    verbose, timings)
         if args.rf or args.all:
             run_experiment(experiment_details, experiments.RFExperiment, 'RF', args.dim, args.skiprerun,
                            verbose, timings)
-        # if args.rp or args.all:
-        #     run_experiment(experiment_details, experiments.RPExperiment, 'RP', args.dim, args.skiprerun,
-        #                    verbose, timings)
+        if args.rp or args.all:
+            run_experiment(experiment_details, experiments.RPExperiment, 'RP', args.dim, args.skiprerun,
+                           verbose, timings)
 
         logger.info("Timings: {}".format(timings))
 
