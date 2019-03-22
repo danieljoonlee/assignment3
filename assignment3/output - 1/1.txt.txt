@@ -1,2 +1,0 @@
-first iteration - no dimension editing 
-n best params set
