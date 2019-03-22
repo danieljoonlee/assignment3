@@ -150,9 +150,9 @@ if __name__ == '__main__':
         if args.rf or args.all:
             run_experiment(experiment_details, experiments.RFExperiment, 'RF', args.dim, args.skiprerun,
                            verbose, timings)
-        if args.rp or args.all:
-            run_experiment(experiment_details, experiments.RPExperiment, 'RP', args.dim, args.skiprerun,
-                           verbose, timings)
+        # if args.rp or args.all:
+        #     run_experiment(experiment_details, experiments.RPExperiment, 'RP', args.dim, args.skiprerun,
+        #                    verbose, timings)
 
         logger.info("Timings: {}".format(timings))
 
