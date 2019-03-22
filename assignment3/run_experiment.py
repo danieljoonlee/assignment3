@@ -99,7 +99,7 @@ if __name__ == '__main__':
             'data': loader.CreditDefaultData(verbose=True, seed=seed),
             'name': 'credit_default',
             'readable_name': 'Credit Default',
-            'best_nn_params': {'NN__activation': ['relu'], 'NN__alpha': [0],
+            'best_nn_params': {'NN__activation': ['relu'], 'NN__alpha': [0.001],
             'NN__hidden_layer_sizes': [(23,23)], 'NN__learning_rate_init': [0.13]}
     }
 

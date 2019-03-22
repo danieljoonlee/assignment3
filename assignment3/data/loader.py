@@ -79,8 +79,8 @@ class DataLoader(ABC):
             self._load_data()
 
         #credit card default reduce rows
-        if self.data_name() is "CreditDefaultData":
-            self._data = self._data.iloc[:10000]
+        #if self.data_name() is "CreditDefaultData":
+        #    self._data = self._data.iloc[:5000]
 
         self.log("Processing {} Path: {}, Dimensions: {}", self.data_name(), self._path, self._data.shape)
         
