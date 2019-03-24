@@ -76,7 +76,8 @@ if __name__ == '__main__':
         parser.print_help()
         sys.exit(1)
 
-    seed = 33333333
+    # seed = 33333333
+    seed = args.seed
     if seed is None:
         seed = np.random.randint(0, (2 ** 32) - 1)
         logger.info("Using seed {}".format(seed))
