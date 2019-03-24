@@ -6,8 +6,8 @@
 # spam data set
 python3 run_experiment.py --ica --dataset1 --dim 60 --skiprerun --verbose --threads -1 > ica-dataset1-clustering.log 2>&1
 python3 run_experiment.py --pca --dataset1 --dim 4 --skiprerun --verbose --threads -1 > pca-dataset1-clustering.log 2>&1
-# python run_experiment.py --rp  --dataset1 --dim 8 --skiprerun --verbose --threads -1 > rp-dataset1-clustering.log  2>&1
-# python run_experiment.py --rf  --dataset1 --dim 12 --skiprerun --verbose --threads -1 > rf-dataset1-clustering.log  2>&1
+python run_experiment.py --rp  --dataset1 --dim 8 --skiprerun --verbose --threads -1 > rp-dataset1-clustering.log  2>&1
+python run_experiment.py --rf  --dataset1 --dim 12 --skiprerun --verbose --threads -1 > rf-dataset1-clustering.log  2>&1
 
 
 # iterations
